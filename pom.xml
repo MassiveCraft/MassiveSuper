@@ -60,7 +60,7 @@
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
         <massiveKothVersion>5.6.4</massiveKothVersion>
         <massiveParticlePackVersion>3.3</massiveParticlePackVersion>
-        <massivePlotSquaredVersion>3.4.6-SNAPSHOT-0244c02</massivePlotSquaredVersion>
+        <massivePlotSquaredVersion>3.4.6-SNAPSHOT-a05fd2d</massivePlotSquaredVersion>
         <massiveAacVersion>2.1.1-b2</massiveAacVersion>
         <massiveAntiCheatPlusVersion>2.1.4</massiveAntiCheatPlusVersion>
         <massiveLwcVersion>1.7.3</massiveLwcVersion>
@@ -411,9 +411,9 @@
 
             <!--
                 Page: http://ci.athion.net/job/PlotSquared/
-                File: http://ci.athion.net/job/PlotSquared/365/
-                Intall: mvn install:install-file -DgroupId=com.plotsquared.bukkit -DartifactId=PlotSquared -Dversion=3.4.6-SNAPSHOT-0244c02 -Dpackaging=jar -Dfile=PlotSquared-Bukkit-3.4.6-SNAPSHOT-0244c02.jar
-                Test: mvn dependency:get -Dartifact=com.plotsquared.bukkit:PlotSquared:3.4.6-SNAPSHOT-0244c02
+                File: http://ci.athion.net/job/PlotSquared/368/
+                Intall: mvn install:install-file -DgroupId=com.plotsquared.bukkit -DartifactId=PlotSquared -Dversion=3.4.6-SNAPSHOT-a05fd2d -Dpackaging=jar -Dfile=PlotSquared-Bukkit-3.4.6-SNAPSHOT-a05fd2d.jar
+                Test: mvn dependency:get -Dartifact=com.plotsquared.bukkit:PlotSquared:3.4.6-SNAPSHOT-a05fd2d
             -->
             <dependency>
                 <groupId>com.plotsquared.bukkit</groupId>
