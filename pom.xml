@@ -37,6 +37,7 @@
 
         <!-- External Versions -->
         <massiveJavassistVersion>3.21.0-GA</massiveJavassistVersion>
+        <massiveHttpclientVersion>4.5.2</massiveHttpclientVersion>
         <massiveSpigotVersion>1.10.2-R0.1-SNAPSHOT</massiveSpigotVersion>
         <massiveBungeeCordApiVersion>1.10-SNAPSHOT</massiveBungeeCordApiVersion>
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
@@ -207,6 +208,11 @@
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
                 <version>${massiveJavassistVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${massiveHttpclientVersion}</version>
             </dependency>
             <dependency>
                 <groupId>org.spigotmc</groupId>
