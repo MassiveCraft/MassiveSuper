@@ -472,6 +472,7 @@
             <!-- Note that we use different artifact ids to allow using all at once. -->
             <!-- http://stackoverflow.com/questions/24962607/multiple-versions-of-the-same-dependency-in-maven -->
             <!--
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R1 -Dversion=1.11.0-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-111R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=110R1 -Dversion=1.10.0-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-110R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=19R2 -Dversion=1.9.4-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-19R2.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=19R1 -Dversion=1.9.0-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-19R1.jar
@@ -480,6 +481,12 @@
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=18R1 -Dversion=1.8.1-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-18R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=17R4 -Dversion=1.7.10-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-17R4.jar
             -->
+            <dependency>
+                <groupId>org.spigotmc.spigot</groupId>
+                <artifactId>111R1</artifactId>
+                <version>1.11.0-R0.1-SNAPSHOT</version>
+                <scope>provided</scope>
+            </dependency>
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
                 <artifactId>110R1</artifactId>
