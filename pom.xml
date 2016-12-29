@@ -35,36 +35,65 @@
         <massiveMavenJarPluginVersion>3.0.2</massiveMavenJarPluginVersion>
         <massiveMavenShadePluginVersion>2.4.3</massiveMavenShadePluginVersion>
 
+        <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->
+        <!-- ~~~~~~~~~~~~~~~~~ -->
         <massiveJavassistVersion>3.21.0-GA</massiveJavassistVersion>
         <massiveHttpclientVersion>4.5.2</massiveHttpclientVersion>
-        <massiveSpigotVersion>1.11-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massiveBungeeCordApiVersion>1.10-SNAPSHOT</massiveBungeeCordApiVersion>
+
+        <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
+        <massiveSpigotVersion>1.11.2-R0.1-SNAPSHOT</massiveSpigotVersion>
+
+        <!-- https://oss.sonatype.org/content/repositories/snapshots/net/md-5/bungeecord-api/ -->
+        <massiveBungeeCordApiVersion>1.11-SNAPSHOT</massiveBungeeCordApiVersion>
+
+        <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
-        <massiveWorldEditVersion>6.1.4-SNAPSHOT</massiveWorldEditVersion>
-        <massiveWorldGuardVersion>6.1.3-SNAPSHOT</massiveWorldGuardVersion>
-        <massiveProtocolLibVersion>4.1.0</massiveProtocolLibVersion>
-        <massiveLibsDisguisesVersion>9.0.9-SNAPSHOT</massiveLibsDisguisesVersion>
+
+        <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
+        <!-- The artifact in their repository was not properly shaded -->
+        <!-- The solution for now is to download and install manually -->
+        <massiveWorldEditVersion>6.1.5-TEMPFIX</massiveWorldEditVersion>
+
+        <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
+        <massiveWorldGuardVersion>6.2</massiveWorldGuardVersion>
+
+        <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
+        <massiveProtocolLibVersion>4.2.0</massiveProtocolLibVersion>
+
+        <!-- http://repo.md-5.net/content/groups/public/LibsDisguises/LibsDisguises/ -->
+        <massiveLibsDisguisesVersion>9.2.4</massiveLibsDisguisesVersion>
+
+        <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
         <massiveDynmapVersion>2.3</massiveDynmapVersion>
+
+        <!--http://repo.md-5.net/content/groups/public/fr/neatmonster/nocheatplus/-->
         <massiveNoCheatPlusVersion>3.15.0-SNAPSHOT</massiveNoCheatPlusVersion>
+
+        <!-- http://minebuilders.me:8080/plugin/repository/everything/uk/co/oliwali/HawkEye/ -->
         <massiveHawkEyeVersion>1.7.2</massiveHawkEyeVersion>
-        <massiveCitizensVersion>2.0.20-SNAPSHOT</massiveCitizensVersion>
+
+        <!-- http://repo.citizensnpcs.co/net/citizensnpcs/citizens/ -->
+        <massiveCitizensVersion>2.0.21-SNAPSHOT</massiveCitizensVersion>
+
+        <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
 
+        <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
+        <!-- ~~~~~~~~~~~~~~~ -->
         <massiveHerochatVersion>5.6.7-SNAPSHOT</massiveHerochatVersion>
         <massiveWorldBorderVersion>1.8.6</massiveWorldBorderVersion>
         <massiveMcmmoVersion>1.5.07-SNAPSHOT</massiveMcmmoVersion>
-        <massiveHolographicDisplaysVersion>2.2.1</massiveHolographicDisplaysVersion>
-        <massiveMorePlayerModelsVersion>1.9.4</massiveMorePlayerModelsVersion>
-        <massiveWarVersion>1.9</massiveWarVersion>
+        <massiveHolographicDisplaysVersion>2.2.3</massiveHolographicDisplaysVersion>
+        <massiveMorePlayerModelsVersion>1.10.2</massiveMorePlayerModelsVersion>
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
-        <massiveKothVersion>5.6.4</massiveKothVersion>
         <massiveParticlePackVersion>3.3</massiveParticlePackVersion>
-        <massivePlotSquaredVersion>3.4.6-SNAPSHOT-a05fd2d</massivePlotSquaredVersion>
-        <massiveAacVersion>2.1.1-b2</massiveAacVersion>
+        <massivePlotSquaredVersion>3.5.1-SNAPSHOT-15d4b6d</massivePlotSquaredVersion>
+        <massiveAacVersion>3.0.1-b2</massiveAacVersion>
         <massiveAntiCheatPlusVersion>2.1.4</massiveAntiCheatPlusVersion>
-        <massiveLwcVersion>1.7.3</massiveLwcVersion>
+        <massiveLwcVersion>1.7.9</massiveLwcVersion>
+
     </properties>
 
     <!-- Repositories -->
@@ -232,12 +261,19 @@
                 <version>${massiveVaultVersion}</version>
                 <scope>provided</scope>
             </dependency>
+            <!--
+                Page: https://dev.bukkit.org/projects/worldedit/files
+                File: https://dev.bukkit.org/projects/worldedit/files/956525
+                Intall: mvn install:install-file -DgroupId=com.sk89q.worldedit -DartifactId=worldedit-bukkit -Dversion=6.1.5-TEMPFIX -Dpackaging=jar -Dfile=worldedit-bukkit-6.1.5.jar
+                Test: mvn dependency:get -Dartifact=com.sk89q.worldedit:worldedit-bukkit:6.1.5-TEMPFIX
+            -->
             <dependency>
                 <groupId>com.sk89q.worldedit</groupId>
                 <artifactId>worldedit-bukkit</artifactId>
                 <version>${massiveWorldEditVersion}</version>
                 <scope>provided</scope>
             </dependency>
+
             <dependency>
                 <groupId>com.sk89q.worldguard</groupId>
                 <artifactId>worldguard-legacy</artifactId>
@@ -299,9 +335,9 @@
             -->
 
             <!--
-                Page: https://dev.bukkit.org/bukkit-plugins/herochat/files/
-                File: https://dev.bukkit.org/bukkit-plugins/herochat/files/17-herochat-legacy/
-                Intall: mvn install:install-file -DgroupId=com.dthielke.herochat -DartifactId=Herochat -Dversion=5.6.7-SNAPSHOT -Dpackaging=jar -Dfile=Herochat.jar
+                Page: https://dev.bukkit.org/projects/herochat/files
+                File: https://dev.bukkit.org/projects/herochat/files/726673
+                Intall: mvn install:install-file -DgroupId=com.dthielke.herochat -DartifactId=Herochat -Dversion=5.6.7-SNAPSHOT -Dpackaging=jar -Dfile=HeroChat.jar
                 Test: mvn dependency:get -Dartifact=com.dthielke.herochat:Herochat:5.6.7-SNAPSHOT
             -->
             <dependency>
@@ -312,8 +348,8 @@
             </dependency>
 
             <!--
-                Page: https://dev.bukkit.org/bukkit-plugins/worldborder/files/
-                File: https://dev.bukkit.org/bukkit-plugins/worldborder/files/40-1-8-6/
+                Page: https://dev.bukkit.org/projects/worldborder/files
+                File: https://dev.bukkit.org/projects/worldborder/files/937149
                 Intall: mvn install:install-file -DgroupId=com.wimbli.WorldBorder -DartifactId=WorldBorder -Dversion=1.8.6 -Dpackaging=jar -Dfile=WorldBorder.jar
                 Test: mvn dependency:get -Dartifact=com.wimbli.WorldBorder:WorldBorder:1.8.6
             -->
@@ -326,7 +362,7 @@
 
             <!--
                 Page: https://ci.drtshock.net/job/mcMMO/
-                File: https://ci.drtshock.net/job/mcMMO/173/
+                File: https://ci.drtshock.net/job/mcMMO/179/
                 Intall: mvn install:install-file -DgroupId=com.gmail.nossr50.mcMMO -DartifactId=mcMMO -Dversion=1.5.07-SNAPSHOT -Dpackaging=jar -Dfile=mcMMO.jar
                 Test: mvn dependency:get -Dartifact=com.gmail.nossr50.mcMMO:mcMMO:1.5.07-SNAPSHOT
             -->
@@ -338,10 +374,10 @@
             </dependency>
 
             <!--
-                Page: https://dev.bukkit.org/bukkit-plugins/holographic-displays/files/
-                File: https://dev.bukkit.org/bukkit-plugins/holographic-displays/files/72-holographic-displays-v2-2-1/
-                Intall: mvn install:install-file -DgroupId=com.gmail.filoghost.holographicdisplays -DartifactId=HolographicDisplays -Dversion=2.2.1 -Dpackaging=jar -Dfile=HolographicDisplays.jar
-                Test: mvn dependency:get -Dartifact=com.gmail.filoghost.holographicdisplays:HolographicDisplays:2.2.1
+                Page: https://dev.bukkit.org/projects/holographic-displays/files
+                File: https://dev.bukkit.org/projects/holographic-displays/files/956385
+                Intall: mvn install:install-file -DgroupId=com.gmail.filoghost.holographicdisplays -DartifactId=HolographicDisplays -Dversion=2.2.3 -Dpackaging=jar -Dfile=HolographicDisplays.jar
+                Test: mvn dependency:get -Dartifact=com.gmail.filoghost.holographicdisplays:HolographicDisplays:2.2.3
             -->
             <dependency>
                 <groupId>com.gmail.filoghost.holographicdisplays</groupId>
@@ -351,28 +387,15 @@
             </dependency>
 
             <!--
-                Page: https://dev.bukkit.org/bukkit-plugins/sit-and-lie-anywhere/files/
-                File: https://dev.bukkit.org/bukkit-plugins/sit-and-lie-anywhere/files/32-more-player-models-1-9-4/
-                Intall: mvn install:install-file -DgroupId=noppes.mpm -DartifactId=MorePlayerModels -Dversion=1.9.4 -Dpackaging=jar -Dfile=MorePlayerModels_1.9.4.jar
-                Test: mvn dependency:get -Dartifact=noppes.mpm:MorePlayerModels:1.9.4
+                Page: https://dev.bukkit.org/projects/sit-and-lie-anywhere/files
+                File: https://dev.bukkit.org/projects/sit-and-lie-anywhere/files/949934
+                Intall: mvn install:install-file -DgroupId=noppes.mpm -DartifactId=MorePlayerModels -Dversion=1.10.2 -Dpackaging=jar -Dfile=MorePlayerModels_1.10.2.jar
+                Test: mvn dependency:get -Dartifact=noppes.mpm:MorePlayerModels:1.10.2
             -->
             <dependency>
                 <groupId>noppes.mpm</groupId>
                 <artifactId>MorePlayerModels</artifactId>
                 <version>${massiveMorePlayerModelsVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://dev.bukkit.org/bukkit-plugins/war/files/
-                File: https://dev.bukkit.org/bukkit-plugins/war/files/12-war-v1-9/
-                Intall: mvn install:install-file -DgroupId=com.tommytony -DartifactId=war -Dversion=1.9 -Dpackaging=jar -Dfile=war-1.9.jar
-                Test: mvn dependency:get -Dartifact=com.tommytony:war:1.9
-            -->
-            <dependency>
-                <groupId>com.tommytony</groupId>
-                <artifactId>war</artifactId>
-                <version>${massiveWarVersion}</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -386,19 +409,6 @@
                 <groupId>com.mewin</groupId>
                 <artifactId>WGRegionEvents</artifactId>
                 <version>${massiveWGRegionEventsVersion}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <!--
-                Page: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-30-sale.6832/history
-                File: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-30-sale.6832/download?version=72936
-                Intall: mvn install:install-file -DgroupId=com.benzimmer123.koth -DartifactId=KOTH -Dversion=5.6.4 -Dpackaging=jar -Dfile=KOTH.jar
-                Test: mvn dependency:get -Dartifact=com.benzimmer123.koth:KOTH:5.6.4
-            -->
-            <dependency>
-                <groupId>com.benzimmer123.koth</groupId>
-                <artifactId>KOTH</artifactId>
-                <version>${massiveKothVersion}</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -417,9 +427,9 @@
 
             <!--
                 Page: http://ci.athion.net/job/PlotSquared/
-                File: http://ci.athion.net/job/PlotSquared/368/
-                Intall: mvn install:install-file -DgroupId=com.plotsquared.bukkit -DartifactId=PlotSquared -Dversion=3.4.6-SNAPSHOT-a05fd2d -Dpackaging=jar -Dfile=PlotSquared-Bukkit-3.4.6-SNAPSHOT-a05fd2d.jar
-                Test: mvn dependency:get -Dartifact=com.plotsquared.bukkit:PlotSquared:3.4.6-SNAPSHOT-a05fd2d
+                File: http://ci.athion.net/job/PlotSquared/429/
+                Intall: mvn install:install-file -DgroupId=com.plotsquared.bukkit -DartifactId=PlotSquared -Dversion=3.5.1-SNAPSHOT-15d4b6d -Dpackaging=jar -Dfile=PlotSquared-Bukkit-3.5.1-SNAPSHOT-15d4b6d.jar
+                Test: mvn dependency:get -Dartifact=com.plotsquared.bukkit:PlotSquared:3.5.1-SNAPSHOT-15d4b6d
             -->
             <dependency>
                 <groupId>com.plotsquared.bukkit</groupId>
@@ -430,9 +440,9 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/history
-                File: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/download?version=105280
-                Intall: mvn install:install-file -DgroupId=me.konsolas.aac -DartifactId=AAC -Dversion=2.1.1-b2 -Dpackaging=jar -Dfile=AAC21.jar
-                Test: mvn dependency:get -Dartifact=me.konsolas.aac:AAC:2.1.1-b2
+                File: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/download?version=132639
+                Intall: mvn install:install-file -DgroupId=me.konsolas.aac -DartifactId=AAC -Dversion=3.0.1-b2 -Dpackaging=jar -Dfile=AAC.jar
+                Test: mvn dependency:get -Dartifact=me.konsolas.aac:AAC:3.0.1-b2
             -->
             <dependency>
                 <groupId>me.konsolas.aac</groupId>
@@ -456,9 +466,9 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/history
-                File: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/download?version=98286
-                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=1.7.3 -Dpackaging=jar -Dfile=EntityLWC.jar
-                Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:1.7.3
+                File: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/download?version=131362
+                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=1.7.9 -Dpackaging=jar -Dfile=EntityLWC.jar
+                Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:1.7.9
             -->
             <dependency>
                 <groupId>com.griefcraft</groupId>
@@ -472,7 +482,7 @@
             <!-- Note that we use different artifact ids to allow using all at once. -->
             <!-- http://stackoverflow.com/questions/24962607/multiple-versions-of-the-same-dependency-in-maven -->
             <!--
-                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R1 -Dversion=1.11.0-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-111R1.jar
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R1 -Dversion=1.11.2-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-111R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=110R1 -Dversion=1.10.0-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-110R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=19R2 -Dversion=1.9.4-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-19R2.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=19R1 -Dversion=1.9.0-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-19R1.jar
@@ -484,7 +494,7 @@
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
                 <artifactId>111R1</artifactId>
-                <version>1.11.0-R0.1-SNAPSHOT</version>
+                <version>1.11.2-R0.1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
