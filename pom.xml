@@ -88,6 +88,7 @@
         <massiveHolographicDisplaysVersion>2.2.3</massiveHolographicDisplaysVersion>
         <massiveMorePlayerModelsVersion>1.10.2</massiveMorePlayerModelsVersion>
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
+        <massiveKothVersion>6.1.0</massiveKothVersion>
         <massiveParticlePackVersion>3.3</massiveParticlePackVersion>
         <massivePlotSquaredVersion>3.5.1-SNAPSHOT-15d4b6d</massivePlotSquaredVersion>
         <massiveAacVersion>3.0.1-b2</massiveAacVersion>
@@ -409,6 +410,19 @@
                 <groupId>com.mewin</groupId>
                 <artifactId>WGRegionEvents</artifactId>
                 <version>${massiveWGRegionEventsVersion}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!--
+                Page: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-30-sale.6832/history
+                File: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-30-sale.6832/download?version=72936
+                Intall: mvn install:install-file -DgroupId=com.benzimmer123.koth -DartifactId=KOTH -Dversion=6.1.0 -Dpackaging=jar -Dfile=KOTH.jar
+                Test: mvn dependency:get -Dartifact=com.benzimmer123.koth:KOTH:6.1.0
+            -->
+            <dependency>
+                <groupId>com.benzimmer123.koth</groupId>
+                <artifactId>KOTH</artifactId>
+                <version>${massiveKothVersion}</version>
                 <scope>provided</scope>
             </dependency>
 
