@@ -59,7 +59,7 @@
         <massiveWorldGuardVersion>6.2</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
-        <massiveProtocolLibVersion>4.2.0</massiveProtocolLibVersion>
+        <massiveProtocolLibVersion>4.2.1</massiveProtocolLibVersion>
 
         <!-- http://repo.md-5.net/content/groups/public/LibsDisguises/LibsDisguises/ -->
         <massiveLibsDisguisesVersion>9.2.4</massiveLibsDisguisesVersion>
@@ -67,7 +67,7 @@
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
         <massiveDynmapVersion>2.3</massiveDynmapVersion>
 
-        <!--http://repo.md-5.net/content/groups/public/fr/neatmonster/nocheatplus/-->
+        <!-- http://repo.md-5.net/content/groups/public/fr/neatmonster/nocheatplus/ -->
         <massiveNoCheatPlusVersion>3.15.0-SNAPSHOT</massiveNoCheatPlusVersion>
 
         <!-- http://minebuilders.me:8080/plugin/repository/everything/uk/co/oliwali/HawkEye/ -->
@@ -85,7 +85,7 @@
         <massiveHerochatVersion>5.6.7-SNAPSHOT</massiveHerochatVersion>
         <massiveWorldBorderVersion>1.8.6</massiveWorldBorderVersion>
         <massiveMcmmoVersion>1.5.07-SNAPSHOT</massiveMcmmoVersion>
-        <massiveHolographicDisplaysVersion>2.2.3</massiveHolographicDisplaysVersion>
+        <massiveHolographicDisplaysVersion>2.2.5</massiveHolographicDisplaysVersion>
         <massiveMorePlayerModelsVersion>1.10.2</massiveMorePlayerModelsVersion>
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
         <massiveKothVersion>6.1.0</massiveKothVersion>
@@ -377,8 +377,8 @@
             <!--
                 Page: https://dev.bukkit.org/projects/holographic-displays/files
                 File: https://dev.bukkit.org/projects/holographic-displays/files/956385
-                Intall: mvn install:install-file -DgroupId=com.gmail.filoghost.holographicdisplays -DartifactId=HolographicDisplays -Dversion=2.2.3 -Dpackaging=jar -Dfile=HolographicDisplays.jar
-                Test: mvn dependency:get -Dartifact=com.gmail.filoghost.holographicdisplays:HolographicDisplays:2.2.3
+                Intall: mvn install:install-file -DgroupId=com.gmail.filoghost.holographicdisplays -DartifactId=HolographicDisplays -Dversion=2.2.5 -Dpackaging=jar -Dfile=HolographicDisplays.jar
+                Test: mvn dependency:get -Dartifact=com.gmail.filoghost.holographicdisplays:HolographicDisplays:2.2.5
             -->
             <dependency>
                 <groupId>com.gmail.filoghost.holographicdisplays</groupId>
