@@ -42,10 +42,10 @@
         <massiveHttpclientVersion>4.5.2</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.11.2-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massiveSpigotVersion>1.12-R0.1-SNAPSHOT</massiveSpigotVersion>
 
         <!-- https://oss.sonatype.org/content/repositories/snapshots/net/md-5/bungeecord-api/ -->
-        <massiveBungeeCordApiVersion>1.11-SNAPSHOT</massiveBungeeCordApiVersion>
+        <massiveBungeeCordApiVersion>1.12-SNAPSHOT</massiveBungeeCordApiVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
         <massiveVaultVersion>1.5.6</massiveVaultVersion>
@@ -496,6 +496,12 @@
             <!-- Note that we use different artifact ids to allow using all at once. -->
             <!-- http://stackoverflow.com/questions/24962607/multiple-versions-of-the-same-dependency-in-maven -->
             <!--
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=114R5-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-114R5-fake.jar
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=114R4-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-114R4-fake.jar
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=114R3-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-114R3-fake.jar
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=114R2-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-114R2-fake.jar
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=114R1-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-114R1-fake.jar
+
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=113R5-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-113R5-fake.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=113R4-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-113R4-fake.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=113R3-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-113R3-fake.jar
@@ -506,13 +512,8 @@
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=112R4-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-112R4-fake.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=112R3-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-112R3-fake.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=112R2-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-112R2-fake.jar
-                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=112R1-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-112R1-fake.jar
 
-                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R5-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-111R5-fake.jar
-                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R4-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-111R4-fake.jar
-                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R3-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-111R3-fake.jar
-                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R2-fake -Dversion=fake -Dpackaging=jar -Dfile=spigot-111R2-fake.jar
-
+                mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=112R1 -Dversion=1.12-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-112R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=111R1 -Dversion=1.11.2-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-111R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=110R1 -Dversion=1.10.0-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-110R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=19R2 -Dversion=1.9.4-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-19R2.jar
@@ -522,6 +523,37 @@
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=18R1 -Dversion=1.8.1-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-18R1.jar
                 mvn install:install-file -DgroupId=org.spigotmc.spigot -DartifactId=17R4 -Dversion=1.7.10-R0.1-SNAPSHOT -Dpackaging=jar -Dfile=spigot-17R4.jar
             -->
+
+            <dependency>
+                <groupId>org.spigotmc.spigot</groupId>
+                <artifactId>114R5-fake</artifactId>
+                <version>fake</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.spigotmc.spigot</groupId>
+                <artifactId>114R4-fake</artifactId>
+                <version>fake</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.spigotmc.spigot</groupId>
+                <artifactId>114R3-fake</artifactId>
+                <version>fake</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.spigotmc.spigot</groupId>
+                <artifactId>114R2-fake</artifactId>
+                <version>fake</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.spigotmc.spigot</groupId>
+                <artifactId>114R1-fake</artifactId>
+                <version>fake</version>
+                <scope>provided</scope>
+            </dependency>
 
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
@@ -578,38 +610,13 @@
                 <version>fake</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
-                <groupId>org.spigotmc.spigot</groupId>
-                <artifactId>112R1-fake</artifactId>
-                <version>fake</version>
-                <scope>provided</scope>
-            </dependency>
 
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
-                <artifactId>111R5-fake</artifactId>
-                <version>fake</version>
+                <artifactId>112R1</artifactId>
+                <version>1.12-R0.1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
-                <groupId>org.spigotmc.spigot</groupId>
-                <artifactId>111R4-fake</artifactId>
-                <version>fake</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.spigotmc.spigot</groupId>
-                <artifactId>111R3-fake</artifactId>
-                <version>fake</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.spigotmc.spigot</groupId>
-                <artifactId>111R2-fake</artifactId>
-                <version>fake</version>
-                <scope>provided</scope>
-            </dependency>
-
             <dependency>
                 <groupId>org.spigotmc.spigot</groupId>
                 <artifactId>111R1</artifactId>
