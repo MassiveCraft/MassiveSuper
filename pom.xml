@@ -31,15 +31,15 @@
 
         <!-- Maven Plugin Properties -->
         <massiveMavenEnforcerPluginVersion>1.4.1</massiveMavenEnforcerPluginVersion>
-        <massiveMavenCompilerPluginVersion>3.5.1</massiveMavenCompilerPluginVersion>
+        <massiveMavenCompilerPluginVersion>3.6.1</massiveMavenCompilerPluginVersion>
         <massiveMavenJarPluginVersion>3.0.2</massiveMavenJarPluginVersion>
-        <massiveMavenShadePluginVersion>2.4.3</massiveMavenShadePluginVersion>
+        <massiveMavenShadePluginVersion>3.0.0</massiveMavenShadePluginVersion>
 
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <massiveJavassistVersion>3.21.0-GA</massiveJavassistVersion>
-        <massiveHttpclientVersion>4.5.2</massiveHttpclientVersion>
+        <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
         <massiveSpigotVersion>1.12-R0.1-SNAPSHOT</massiveSpigotVersion>
@@ -59,22 +59,22 @@
         <massiveWorldGuardVersion>6.2</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
-        <massiveProtocolLibVersion>4.2.1</massiveProtocolLibVersion>
+        <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
 
         <!-- http://repo.md-5.net/content/groups/public/LibsDisguises/LibsDisguises/ -->
-        <massiveLibsDisguisesVersion>9.2.4</massiveLibsDisguisesVersion>
+        <massiveLibsDisguisesVersion>9.4.0</massiveLibsDisguisesVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>2.3</massiveDynmapVersion>
+        <massiveDynmapVersion>2.5</massiveDynmapVersion>
 
         <!-- http://repo.md-5.net/content/groups/public/fr/neatmonster/nocheatplus/ -->
-        <massiveNoCheatPlusVersion>3.15.0-SNAPSHOT</massiveNoCheatPlusVersion>
+        <massiveNoCheatPlusVersion>3.15.1-RC</massiveNoCheatPlusVersion>
 
         <!-- http://minebuilders.me:8080/plugin/repository/everything/uk/co/oliwali/HawkEye/ -->
         <massiveHawkEyeVersion>1.7.2</massiveHawkEyeVersion>
 
         <!-- http://repo.citizensnpcs.co/net/citizensnpcs/citizens/ -->
-        <massiveCitizensVersion>2.0.21-SNAPSHOT</massiveCitizensVersion>
+        <massiveCitizensVersion>2.0.22-SNAPSHOT</massiveCitizensVersion>
 
         <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
@@ -82,18 +82,41 @@
         <!-- ~~~~~~~~~~~~~~~ -->
         <!-- Custom Versions -->
         <!-- ~~~~~~~~~~~~~~~ -->
+        <!-- https://dev.bukkit.org/projects/herochat/files -->
         <massiveHerochatVersion>5.6.7-SNAPSHOT</massiveHerochatVersion>
-        <massiveWorldBorderVersion>1.8.6</massiveWorldBorderVersion>
-        <massiveMcmmoVersion>1.5.07-SNAPSHOT</massiveMcmmoVersion>
-        <massiveHolographicDisplaysVersion>2.2.5</massiveHolographicDisplaysVersion>
+
+        <!-- https://dev.bukkit.org/projects/worldborder/files -->
+        <massiveWorldBorderVersion>1.8.7</massiveWorldBorderVersion>
+
+        <!-- https://www.spigotmc.org/resources/mcmmo.2445/ -->
+        <massiveMcmmoVersion>1.5.08</massiveMcmmoVersion>
+
+        <!-- https://dev.bukkit.org/projects/holographic-displays/files -->
+        <massiveHolographicDisplaysVersion>2.2.6</massiveHolographicDisplaysVersion>
+
+        <!-- https://dev.bukkit.org/projects/sit-and-lie-anywhere/files -->
         <massiveMorePlayerModelsVersion>1.10.2</massiveMorePlayerModelsVersion>
+
+        <!-- https://www.spigotmc.org/resources/wgregionevents-continued.15946/ -->
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
-        <massiveKothVersion>6.1.0</massiveKothVersion>
+
+        <!-- https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-1-7-and-1-8-only.6832/ -->
+        <massiveKothVersion>6.2.0</massiveKothVersion>
+
+        <!-- dead -->
         <massiveParticlePackVersion>3.3</massiveParticlePackVersion>
-        <massivePlotSquaredVersion>3.5.1-SNAPSHOT-15d4b6d</massivePlotSquaredVersion>
-        <massiveAacVersion>3.0.1-b2</massiveAacVersion>
+
+        <!-- http://ci.athion.net/job/PlotSquared/ -->
+        <massivePlotSquaredVersion>3.5.1-SNAPSHOT-3633576</massivePlotSquaredVersion>
+
+        <!-- https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/ -->
+        <massiveAacVersion>3.2.1-b1</massiveAacVersion>
+
+        <!-- https://dev.bukkit.org/projects/anticheatplus/files -->
         <massiveAntiCheatPlusVersion>2.1.4</massiveAntiCheatPlusVersion>
-        <massiveLwcVersion>1.7.9</massiveLwcVersion>
+
+        <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
+        <massiveLwcVersion>1.8.2</massiveLwcVersion>
 
     </properties>
 
@@ -350,9 +373,9 @@
 
             <!--
                 Page: https://dev.bukkit.org/projects/worldborder/files
-                File: https://dev.bukkit.org/projects/worldborder/files/937149
-                Intall: mvn install:install-file -DgroupId=com.wimbli.WorldBorder -DartifactId=WorldBorder -Dversion=1.8.6 -Dpackaging=jar -Dfile=WorldBorder.jar
-                Test: mvn dependency:get -Dartifact=com.wimbli.WorldBorder:WorldBorder:1.8.6
+                File: https://dev.bukkit.org/projects/worldborder/files/2415838
+                Intall: mvn install:install-file -DgroupId=com.wimbli.WorldBorder -DartifactId=WorldBorder -Dversion=1.8.7 -Dpackaging=jar -Dfile=WorldBorder.jar
+                Test: mvn dependency:get -Dartifact=com.wimbli.WorldBorder:WorldBorder:1.8.7
             -->
             <dependency>
                 <groupId>com.wimbli.WorldBorder</groupId>
@@ -362,10 +385,10 @@
             </dependency>
 
             <!--
-                Page: https://ci.drtshock.net/job/mcMMO/
-                File: https://ci.drtshock.net/job/mcMMO/179/
-                Intall: mvn install:install-file -DgroupId=com.gmail.nossr50.mcMMO -DartifactId=mcMMO -Dversion=1.5.07-SNAPSHOT -Dpackaging=jar -Dfile=mcMMO.jar
-                Test: mvn dependency:get -Dartifact=com.gmail.nossr50.mcMMO:mcMMO:1.5.07-SNAPSHOT
+                Page: https://www.spigotmc.org/resources/mcmmo.2445/
+                File: https://www.spigotmc.org/resources/mcmmo.2445/update?update=170741
+                Intall: mvn install:install-file -DgroupId=com.gmail.nossr50.mcMMO -DartifactId=mcMMO -Dversion=1.5.08 -Dpackaging=jar -Dfile=mcMMO.jar
+                Test: mvn dependency:get -Dartifact=com.gmail.nossr50.mcMMO:mcMMO:1.5.08
             -->
             <dependency>
                 <groupId>com.gmail.nossr50.mcMMO</groupId>
@@ -376,9 +399,9 @@
 
             <!--
                 Page: https://dev.bukkit.org/projects/holographic-displays/files
-                File: https://dev.bukkit.org/projects/holographic-displays/files/956385
-                Intall: mvn install:install-file -DgroupId=com.gmail.filoghost.holographicdisplays -DartifactId=HolographicDisplays -Dversion=2.2.5 -Dpackaging=jar -Dfile=HolographicDisplays.jar
-                Test: mvn dependency:get -Dartifact=com.gmail.filoghost.holographicdisplays:HolographicDisplays:2.2.5
+                File: https://dev.bukkit.org/projects/holographic-displays/files/2430907
+                Intall: mvn install:install-file -DgroupId=com.gmail.filoghost.holographicdisplays -DartifactId=HolographicDisplays -Dversion=2.2.6 -Dpackaging=jar -Dfile=HolographicDisplays.jar
+                Test: mvn dependency:get -Dartifact=com.gmail.filoghost.holographicdisplays:HolographicDisplays:2.2.6
             -->
             <dependency>
                 <groupId>com.gmail.filoghost.holographicdisplays</groupId>
@@ -414,10 +437,10 @@
             </dependency>
 
             <!--
-                Page: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-30-sale.6832/history
-                File: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-30-sale.6832/download?version=72936
-                Intall: mvn install:install-file -DgroupId=com.benzimmer123.koth -DartifactId=KOTH -Dversion=6.1.0 -Dpackaging=jar -Dfile=KOTH.jar
-                Test: mvn dependency:get -Dartifact=com.benzimmer123.koth:KOTH:6.1.0
+                Page: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-1-7-and-1-8-only.6832/updates
+                File: https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-1-7-and-1-8-only.6832/update?update=170269
+                Intall: mvn install:install-file -DgroupId=com.benzimmer123.koth -DartifactId=KOTH -Dversion=6.2.0 -Dpackaging=jar -Dfile=KOTH.jar
+                Test: mvn dependency:get -Dartifact=com.benzimmer123.koth:KOTH:6.2.0
             -->
             <dependency>
                 <groupId>com.benzimmer123.koth</groupId>
@@ -441,9 +464,9 @@
 
             <!--
                 Page: http://ci.athion.net/job/PlotSquared/
-                File: http://ci.athion.net/job/PlotSquared/429/
-                Intall: mvn install:install-file -DgroupId=com.plotsquared.bukkit -DartifactId=PlotSquared -Dversion=3.5.1-SNAPSHOT-15d4b6d -Dpackaging=jar -Dfile=PlotSquared-Bukkit-3.5.1-SNAPSHOT-15d4b6d.jar
-                Test: mvn dependency:get -Dartifact=com.plotsquared.bukkit:PlotSquared:3.5.1-SNAPSHOT-15d4b6d
+                File: http://ci.athion.net/job/PlotSquared/491/
+                Intall: mvn install:install-file -DgroupId=com.plotsquared.bukkit -DartifactId=PlotSquared -Dversion=3.5.1-SNAPSHOT-3633576 -Dpackaging=jar -Dfile=PlotSquared.jar
+                Test: mvn dependency:get -Dartifact=com.plotsquared.bukkit:PlotSquared:3.5.1-SNAPSHOT-3633576
             -->
             <dependency>
                 <groupId>com.plotsquared.bukkit</groupId>
@@ -454,9 +477,9 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/history
-                File: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/download?version=132639
-                Intall: mvn install:install-file -DgroupId=me.konsolas.aac -DartifactId=AAC -Dversion=3.0.1-b2 -Dpackaging=jar -Dfile=AAC.jar
-                Test: mvn dependency:get -Dartifact=me.konsolas.aac:AAC:3.0.1-b2
+                File: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/update?update=171980
+                Intall: mvn install:install-file -DgroupId=me.konsolas.aac -DartifactId=AAC -Dversion=3.2.1-b1 -Dpackaging=jar -Dfile=AAC.jar
+                Test: mvn dependency:get -Dartifact=me.konsolas.aac:AAC:3.2.1-b1
             -->
             <dependency>
                 <groupId>me.konsolas.aac</groupId>
@@ -481,8 +504,8 @@
             <!--
                 Page: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/history
                 File: https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/download?version=131362
-                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=1.7.9 -Dpackaging=jar -Dfile=EntityLWC.jar
-                Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:1.7.9
+                Intall: mvn install:install-file -DgroupId=com.griefcraft -DartifactId=lwc -Dversion=1.8.2 -Dpackaging=jar -Dfile=EntityLWC.jar
+                Test: mvn dependency:get -Dartifact=com.griefcraft:lwc:1.8.2
             -->
             <dependency>
                 <groupId>com.griefcraft</groupId>
