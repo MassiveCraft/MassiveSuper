@@ -110,7 +110,7 @@
         <massivePlotSquaredVersion>3.5.1-SNAPSHOT-3633576</massivePlotSquaredVersion>
 
         <!-- https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/ -->
-        <massiveAacVersion>3.2.1-b1</massiveAacVersion>
+        <massiveAacVersion>3.2.2</massiveAacVersion>
 
         <!-- https://dev.bukkit.org/projects/anticheatplus/files -->
         <massiveAntiCheatPlusVersion>2.1.4</massiveAntiCheatPlusVersion>
@@ -477,9 +477,9 @@
 
             <!--
                 Page: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/history
-                File: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/update?update=171980
-                Intall: mvn install:install-file -DgroupId=me.konsolas.aac -DartifactId=AAC -Dversion=3.2.1-b1 -Dpackaging=jar -Dfile=AAC.jar
-                Test: mvn dependency:get -Dartifact=me.konsolas.aac:AAC:3.2.1-b1
+                File: https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/update?update=175190
+                Intall: mvn install:install-file -DgroupId=me.konsolas.aac -DartifactId=AAC -Dversion=3.2.2 -Dpackaging=jar -Dfile=AAC.jar
+                Test: mvn dependency:get -Dartifact=me.konsolas.aac:AAC:3.2.2
             -->
             <dependency>
                 <groupId>me.konsolas.aac</groupId>
