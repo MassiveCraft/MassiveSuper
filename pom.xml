@@ -31,13 +31,17 @@
 
         <!-- Maven Plugin Properties -->
         <massiveMavenEnforcerPluginVersion>1.4.1</massiveMavenEnforcerPluginVersion>
-        <massiveMavenCompilerPluginVersion>3.6.1</massiveMavenCompilerPluginVersion>
+        <massiveMavenCompilerPluginVersion>3.7.0</massiveMavenCompilerPluginVersion>
         <massiveMavenJarPluginVersion>3.0.2</massiveMavenJarPluginVersion>
-        <massiveMavenShadePluginVersion>3.0.0</massiveMavenShadePluginVersion>
+        <massiveMavenShadePluginVersion>3.1.0</massiveMavenShadePluginVersion>
 
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->
         <!-- ~~~~~~~~~~~~~~~~~ -->
+        <massiveGuavaVersion>23.5-jre</massiveGuavaVersion>
+        <massiveGsonVersion>2.8.2</massiveGsonVersion>
+        <massiveMongoDBVersion>2.12.3</massiveMongoDBVersion>
+
         <massiveJavassistVersion>3.21.0-GA</massiveJavassistVersion>
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
@@ -257,6 +261,21 @@
     <dependencyManagement>
         <dependencies>
             <!-- External - Properly published Maven projects. Not made by MassiveCraft. -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${massiveGuavaVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${massiveGsonVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongo-java-driver</artifactId>
+                <version>${massiveMongoDBVersion}</version>
+            </dependency>
             <dependency>
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
@@ -953,6 +972,12 @@
                 <artifactId>MassiveVote</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.massivecraft.massivecore</groupId>
+                <artifactId>MassiveXlib</artifactId>
+                <version>${project.version}</version>
+                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>com.massivecraft.vampire</groupId>
