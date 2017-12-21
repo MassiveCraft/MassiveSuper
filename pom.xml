@@ -34,6 +34,8 @@
         <massiveMavenCompilerPluginVersion>3.7.0</massiveMavenCompilerPluginVersion>
         <massiveMavenJarPluginVersion>3.0.2</massiveMavenJarPluginVersion>
         <massiveMavenShadePluginVersion>3.1.0</massiveMavenShadePluginVersion>
+        <massiveMavenProGuardPluginVersion>2.0.14</massiveMavenProGuardPluginVersion>
+        <massiveMavenProGuardVersion>5.3.3</massiveMavenProGuardVersion>
 
         <!-- ~~~~~~~~~~~~~~~~~ -->
         <!-- External Versions -->
@@ -250,6 +252,32 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
                     <version>${massiveMavenShadePluginVersion}</version>
+                </plugin>
+                <!-- ProGuard -->
+                <plugin>
+                    <groupId>com.github.wvengen</groupId>
+                    <artifactId>proguard-maven-plugin</artifactId>
+                    <version>${massiveMavenProGuardPluginVersion}</version>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>proguard</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <proguardVersion>${massiveMavenProGuardVersion}</proguardVersion>
+                        <proguardInclude>${basedir}/proguard.conf</proguardInclude>
+                        <dependencies>
+                            <dependency>
+                                <groupId>net.sf.proguard</groupId>
+                                <artifactId>proguard-base</artifactId>
+                                <version>${massiveMavenProGuardVersion}</version>
+                                <scope>runtime</scope>
+                            </dependency>
+                        </dependencies>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -806,6 +834,18 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <groupId>com.massivecraft.massivecore</groupId>
+                <artifactId>MassiveCoreXlib</artifactId>
+                <version>${project.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.massivecraft.massivecore</groupId>
+                <artifactId>MassiveCoreXlibGuava</artifactId>
+                <version>${project.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
                 <groupId>com.massivecraft.massivedisguises</groupId>
                 <artifactId>MassiveDisguises</artifactId>
                 <version>${project.version}</version>
@@ -972,12 +1012,6 @@
                 <artifactId>MassiveVote</artifactId>
                 <version>${project.version}</version>
                 <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.massivecraft.massivecore</groupId>
-                <artifactId>MassiveXlib</artifactId>
-                <version>${project.version}</version>
-                <scope>compile</scope>
             </dependency>
             <dependency>
                 <groupId>com.massivecraft.vampire</groupId>
