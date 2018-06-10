@@ -68,7 +68,7 @@
         <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
 
         <!-- http://repo.md-5.net/content/groups/public/LibsDisguises/LibsDisguises/ -->
-        <massiveLibsDisguisesVersion>9.4.0</massiveLibsDisguisesVersion>
+        <massiveLibsDisguisesVersion>9.5.1</massiveLibsDisguisesVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
         <massiveDynmapVersion>2.5</massiveDynmapVersion>
@@ -95,7 +95,7 @@
         <massiveWorldBorderVersion>1.8.7</massiveWorldBorderVersion>
 
         <!-- https://www.spigotmc.org/resources/mcmmo.2445/ -->
-        <massiveMcmmoVersion>1.5.08</massiveMcmmoVersion>
+        <massiveMcmmoVersion>1.5.10</massiveMcmmoVersion>
 
         <!-- https://dev.bukkit.org/projects/holographic-displays/files -->
         <massiveHolographicDisplaysVersion>2.2.6</massiveHolographicDisplaysVersion>
@@ -107,7 +107,7 @@
         <massiveWGRegionEventsVersion>2.1.0</massiveWGRegionEventsVersion>
 
         <!-- https://www.spigotmc.org/resources/king-of-the-hill-efficient-and-customizable-1-7-and-1-8-only.6832/ -->
-        <massiveKothVersion>6.2.0</massiveKothVersion>
+        <massiveKothVersion>1.11</massiveKothVersion>
 
         <!-- dead -->
         <massiveParticlePackVersion>3.3</massiveParticlePackVersion>
@@ -157,7 +157,7 @@
         <!-- ProtocolLib -->
         <repository>
             <id>dmulloy2-repo</id>
-            <url>http://repo.dmulloy2.net/content/repositories/public/</url>
+            <url>http://repo.dmulloy2.net/nexus/repository/public/</url>
         </repository>
         <!-- Dynmap -->
         <repository>
@@ -353,7 +353,7 @@
             </dependency>
             <dependency>
                 <groupId>com.comphenix.protocol</groupId>
-                <artifactId>ProtocolLib</artifactId>
+                <artifactId>ProtocolLib-API</artifactId>
                 <version>${massiveProtocolLibVersion}</version>
                 <scope>provided</scope>
             </dependency>
