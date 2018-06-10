@@ -49,6 +49,7 @@
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
         <massiveSpigotVersion>1.12-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.12-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- https://oss.sonatype.org/content/repositories/snapshots/net/md-5/bungeecord-api/ -->
         <massiveBungeeCordApiVersion>1.12-SNAPSHOT</massiveBungeeCordApiVersion>
@@ -132,6 +133,11 @@
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
+        <!-- Paper API -->
+        <repository>
+            <id>destroystokyo-repo</id>
+            <url>https://repo.destroystokyo.com/repository/maven-snapshots/</url>
         </repository>
         <!-- BungeeCord API -->
         <!-- https://www.spigotmc.org/threads/bungeecord-maven.60365/ -->
@@ -318,6 +324,12 @@
                 <groupId>org.spigotmc</groupId>
                 <artifactId>spigot-api</artifactId>
                 <version>${massiveSpigotVersion}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.destroystokyo.paper</groupId>
+                <artifactId>paper-api</artifactId>
+                <version>${massivePaperVersion}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
