@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>com.massivecraft.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>2.13.8-SNAPSHOT</version>
+    <version>2.14.0</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
