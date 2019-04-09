@@ -78,7 +78,7 @@
         <massiveNoCheatPlusVersion>3.16.1-SNAPSHOT</massiveNoCheatPlusVersion>
 
         <!-- http://minebuilders.me:8080/plugin/repository/everything/uk/co/oliwali/HawkEye/ -->
-        <massiveHawkEyeVersion>1.7.2</massiveHawkEyeVersion>
+        <massiveHawkEyeVersion>1.7.2-DEV</massiveHawkEyeVersion>
 
         <!-- http://repo.citizensnpcs.co/net/citizensnpcs/citizens/ -->
         <massiveCitizensVersion>2.0.24-SNAPSHOT</massiveCitizensVersion>
