@@ -4,7 +4,7 @@
     <!-- Basics -->
     <groupId>com.massivecraft.massivesuper</groupId>
     <artifactId>MassiveSuper</artifactId>
-    <version>2.14.1-SNAPSHOT</version>
+    <version>2.15.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <!-- Info -->
@@ -25,7 +25,7 @@
 
         <!-- Core Versions -->
         <!-- Java - We will change to Java 8 for minimum requirement when Mojang does. -->
-        <massiveJavaVersion>1.7</massiveJavaVersion>
+        <massiveJavaVersion>1.8</massiveJavaVersion>
         <!-- Maven - As of writing the version bundled with latest IntelliJ. -->
         <massiveMavenVersion>3.0.5</massiveMavenVersion>
 
@@ -48,40 +48,40 @@
         <massiveHttpclientVersion>4.5.3</massiveHttpclientVersion>
 
         <!-- https://hub.spigotmc.org/nexus/content/groups/public/org/spigotmc/spigot-api/ -->
-        <massiveSpigotVersion>1.12-R0.1-SNAPSHOT</massiveSpigotVersion>
-        <massivePaperVersion>1.12-R0.1-SNAPSHOT</massivePaperVersion>
+        <massiveSpigotVersion>1.13.2-R0.1-SNAPSHOT</massiveSpigotVersion>
+        <massivePaperVersion>1.13.2-R0.1-SNAPSHOT</massivePaperVersion>
 
         <!-- https://oss.sonatype.org/content/repositories/snapshots/net/md-5/bungeecord-api/ -->
-        <massiveBungeeCordApiVersion>1.12-SNAPSHOT</massiveBungeeCordApiVersion>
+        <massiveBungeeCordApiVersion>1.13-SNAPSHOT</massiveBungeeCordApiVersion>
 
         <!-- http://nexus.hc.to/content/repositories/pub_releases/net/milkbowl/vault/Vault/ -->
-        <massiveVaultVersion>1.5.6</massiveVaultVersion>
+        <massiveVaultVersion>1.7.1</massiveVaultVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/ -->
         <!-- The artifact in their repository was not properly shaded -->
         <!-- The solution for now is to download and install manually -->
-        <massiveWorldEditVersion>6.1.5-TEMPFIX</massiveWorldEditVersion>
+        <massiveWorldEditVersion>7.0.0-SNAPSHOT</massiveWorldEditVersion>
 
         <!-- http://maven.sk89q.com/repo/com/sk89q/worldguard/worldguard-legacy/ -->
-        <massiveWorldGuardVersion>6.2</massiveWorldGuardVersion>
+        <massiveWorldGuardVersion>7.0.0-SNAPSHOT</massiveWorldGuardVersion>
 
         <!-- http://repo.dmulloy2.net/content/repositories/public/com/comphenix/protocol/ProtocolLib/ -->
-        <massiveProtocolLibVersion>4.3.0</massiveProtocolLibVersion>
+        <massiveProtocolLibVersion>4.4.0</massiveProtocolLibVersion>
 
         <!-- http://repo.md-5.net/content/groups/public/LibsDisguises/LibsDisguises/ -->
-        <massiveLibsDisguisesVersion>9.5.1</massiveLibsDisguisesVersion>
+        <massiveLibsDisguisesVersion>9.8.0</massiveLibsDisguisesVersion>
 
         <!-- http://repo.mikeprimm.com/us/dynmap/dynmap/ -->
-        <massiveDynmapVersion>2.5</massiveDynmapVersion>
+        <massiveDynmapVersion>3.0-SNAPSHOT</massiveDynmapVersion>
 
         <!-- http://repo.md-5.net/content/groups/public/fr/neatmonster/nocheatplus/ -->
-        <massiveNoCheatPlusVersion>3.15.1-RC</massiveNoCheatPlusVersion>
+        <massiveNoCheatPlusVersion>3.16.1-SNAPSHOT</massiveNoCheatPlusVersion>
 
         <!-- http://minebuilders.me:8080/plugin/repository/everything/uk/co/oliwali/HawkEye/ -->
-        <massiveHawkEyeVersion>1.7.2</massiveHawkEyeVersion>
+        <massiveHawkEyeVersion>1.7.2-DEV</massiveHawkEyeVersion>
 
         <!-- http://repo.citizensnpcs.co/net/citizensnpcs/citizens/ -->
-        <massiveCitizensVersion>2.0.22-SNAPSHOT</massiveCitizensVersion>
+        <massiveCitizensVersion>2.0.24-SNAPSHOT</massiveCitizensVersion>
 
         <!-- http://repo.howaner.de/com/vexsoftware/votifier/ -->
         <massiveVotifierVersion>1.9</massiveVotifierVersion>
@@ -96,10 +96,10 @@
         <massiveWorldBorderVersion>1.8.7</massiveWorldBorderVersion>
 
         <!-- https://www.spigotmc.org/resources/mcmmo.2445/ -->
-        <massiveMcmmoVersion>1.5.10</massiveMcmmoVersion>
+        <massiveMcmmoVersion>1.6.0</massiveMcmmoVersion>
 
         <!-- https://dev.bukkit.org/projects/holographic-displays/files -->
-        <massiveHolographicDisplaysVersion>2.2.6</massiveHolographicDisplaysVersion>
+        <massiveHolographicDisplaysVersion>2.3.2</massiveHolographicDisplaysVersion>
 
         <!-- https://dev.bukkit.org/projects/sit-and-lie-anywhere/files -->
         <massiveMorePlayerModelsVersion>1.10.2</massiveMorePlayerModelsVersion>
@@ -123,7 +123,7 @@
         <massiveAntiCheatPlusVersion>2.1.4</massiveAntiCheatPlusVersion>
 
         <!-- https://www.spigotmc.org/resources/lwc-unofficial-entity-locking.2162/ -->
-        <massiveLwcVersion>1.8.2</massiveLwcVersion>
+        <massiveLwcVersion>2.1.2</massiveLwcVersion>
 
     </properties>
 
